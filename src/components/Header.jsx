@@ -46,7 +46,7 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`block py-2 px-4 text-lg ${pathname === link.href ? 'text-green-600' : ''} hover:text-green-600`}
+              className={`block py-2 px-4 text-sm font-semibold hover:text-green-600 ${pathname === link.href ? 'text-green-600' : ''}`}
               onClick={() => setIsOpen(false)}
             >
               {link.label}
